@@ -15,7 +15,7 @@ Lots of instructions
 ![alt text](./images/1200.png "Title")
 ![alt text](./images/1400.png "Title")
 
-{% for page in collections.pages %}
+{% for post in collections.blog %}
 
-- [{{ page.data.title }}]({{page.url}})
+- [{{ post.data.title }}]({{post.url}})
   {%- endfor %}
