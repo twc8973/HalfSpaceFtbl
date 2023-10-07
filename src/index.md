@@ -1,5 +1,5 @@
 ---
-title: My First Eleventy Site
+title: Half Space Football
 layout: base.njk
 ---
 
