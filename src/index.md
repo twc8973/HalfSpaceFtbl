@@ -17,5 +17,5 @@ Lots of instructions
 
 {% for post in collections.blog %}
 
-- [{{ post.data.title }}]({{post.url}})
+- [{{ post.data.title }} | {{ post.data.date }}]({{post.url}})
   {%- endfor %}
