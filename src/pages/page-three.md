@@ -7,4 +7,4 @@ title: Three
 ## Some content
 
 ### A picture
-![alt text](./images/1400.png "Title")
+![alt text](../images/1400.png "Title")
