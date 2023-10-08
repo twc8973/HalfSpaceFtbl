@@ -3,17 +3,18 @@ title: Half Space Football
 layout: base.njk
 ---
 
-## Posts
+<div class="mt-3">
+  {% for post in collections.blog %}
+  <div class="mt-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">{{ post.data.title }}</h5>
+        <p class="card-text">{{post.date | asPostDate}}</p>
+            <a href="{{post.url}}" class="btn btn-primary">Read</a>
+      </div>
+    </div>
 
-{% for post in collections.blog %}
-<a href="{{post.url}}">
-
-<article>
-  <header>
-  <h3>{{ post.data.title }}</h3>
-  <h4>{{ post.data.date }}</h4>
-  </header>
-</article>
-<hr>
-
+  </div>
 {%- endfor %}
+
+</div>
