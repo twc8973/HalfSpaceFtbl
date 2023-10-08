@@ -7,5 +7,5 @@ layout: base.njk
 
 {% for post in collections.blog %}
 
-- [{{ post.data.title }} | {{ post.data.date }}]({{post.url}})
+- [{{ post.data.title }}]({{post.url}})
   {%- endfor %}
